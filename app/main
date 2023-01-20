@@ -1,0 +1,13 @@
+# %%
+from  read_csv import read
+from  get_percentages import get_percentages
+from charts import chart_pie
+
+def run():
+    data = read("date.csv")
+    labels,values = get_percentages(data)
+    chart_pie(labels,values)
+
+
+if __name__ == "__main__":
+    run()
